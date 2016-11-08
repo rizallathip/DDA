@@ -92,15 +92,16 @@ public class Garis extends JPanel{
         //Gambar garis koordinat layar
         for(int X=0;X<300;X++)
         {
+            g.setColor(Color.blue);
             g.drawRect(X, 0, 2, 2);
             g.drawString("X+", 300, 15);
             for(int Y=0;Y<300;Y++)
             {
+                g.setColor(Color.yellow);
                 g.drawRect(0, Y, 2, 2);
                 g.drawString("Y+", 5, 300);
-                g.setColor(Color.yellow);
             }
-            g.setColor(Color.blue);
+            
         }
     }
 }
